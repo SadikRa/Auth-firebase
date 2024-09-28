@@ -1,11 +1,16 @@
+import { Link } from "react-router-dom";
 
 const Login = () => {
+
+    const handleLogin = (event) => {
+
+    }
     return (
         <div>
             <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-            <form onSubmit={handleRegister}>
+            <form onSubmit={handleLogin}>
               <form className="card-body">
                 <div className="form-control">
                   <label className="label">
@@ -37,7 +42,8 @@ const Login = () => {
                   </label>
                 </div>
                 <div className="form-control mt-6">
-                  <input className="btn btn-primary" type="submit" value="register" />
+                  <input className="btn btn-primary" type="submit" value="login" />
+                  <p>New to auth firebase please <Link to={'/register'}>Register</Link></p>
                 </div>
               </form>
             </form>
