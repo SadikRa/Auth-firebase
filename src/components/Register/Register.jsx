@@ -18,6 +18,7 @@ const Register = () => {
                   </label>
                   <input
                     type="email"
+                    name="email"
                     placeholder="email"
                     className="input input-bordered"
                     required
@@ -30,6 +31,7 @@ const Register = () => {
                   <input
                     type="password"
                     placeholder="password"
+                    name="password"
                     className="input input-bordered"
                     required
                   />
@@ -40,7 +42,7 @@ const Register = () => {
                   </label>
                 </div>
                 <div className="form-control mt-6">
-                  <button className="btn btn-primary">Login</button>
+                  <input className="btn btn-primary" type="submit" value="register" />
                 </div>
               </form>
             </form>
