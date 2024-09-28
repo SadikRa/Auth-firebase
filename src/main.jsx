@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Home from './components/Home/Home';
+import Register from './components/Register/Register';
 
 const router = createBrowserRouter([
   {
@@ -13,10 +14,10 @@ const router = createBrowserRouter([
     element: <Home />,
     // errorElement: <ErrorPage />,
     children: [
-      // {
-      //   path: "contacts/:contactId",
-      //   element: <Contact />,
-      // },
+      {
+        path: "/register",
+        element: <Register />,
+      },
     ],
   },
 ]);
